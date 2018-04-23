@@ -13,7 +13,7 @@ IDE: Code::Blocks 13.12
 #include <stdlib.h>
 #include <limits>
 
-int roll(int dice, int howMany, int additions);  // roll function accepts type of dice, how many rolls, and if there should be any additions to the rollsum
+void roll(int dice, int howMany, int additions);  // roll function accepts type of dice, how many rolls, and if there should be any additions to the rollsum
 int getNumber(int lowerLimit);
 bool getResponse();
 
@@ -41,7 +41,7 @@ int main()
 
 }
 
-int roll(int dice, int howMany, int additions)
+void roll(int dice, int howMany, int additions)
 {
     int lower = 1;
     int upper = dice;
@@ -75,7 +75,7 @@ bool getResponse()
     bool repeat;
     bool error = true;
     std::string response;
-    while(error = true)
+    while(error == true)
     {
 
         std::cin >> response;
