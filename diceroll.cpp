@@ -12,6 +12,7 @@ IDE: Code::Blocks 13.12
 #include <string>
 #include <stdlib.h>
 #include <limits>
+#include <ctime>
 
 void roll(int dice, int howMany, int additions);  // roll function accepts type of dice, how many rolls, and if there should be any additions to the rollsum
 int getNumber(int lowerLimit);
@@ -23,6 +24,7 @@ int main()
     bool rollAgain;
     do
     {
+        srand(time( NULL ));
         std::cout << "How many sides does your die have?" << std::endl;
         int sides = getNumber(2);                                               //minimum sides a die can have is 2, as in a coin
         std::cout << std::endl << "Your die has " << sides << " sides." << std::endl;
@@ -47,6 +49,7 @@ void roll(int dice, int howMany, int additions)
     int upper = dice;
     int sum = 0;
     int roll = 0;
+
     for (int i = 1; i <= howMany; i++)
     {
         roll = rand() % dice + lower;
