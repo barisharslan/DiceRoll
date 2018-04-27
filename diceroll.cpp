@@ -38,6 +38,7 @@ int main()
         std::cout << "Would you like to roll again? (Y/N)" << std::endl;
         rollAgain = getResponse();
         std::cout << std::endl;
+        std::cout << "---------------------------------------------------" << std::endl;
     }while(rollAgain == true);  // if user enters Y, getResponse returns true and the loop repeats, if user enters N , getResponse returns false and
     std::cout << "Thanks for playing!";
     return 0;
