@@ -6,3 +6,6 @@ Then executes the rolls, creating a list of each roll done, and then sums them a
 Finally, asks the user if they want to roll again, and if so, the program loops to the beginning, allowing for another roll.
 This game could be used for games like Dungeons & Dragons and Magic the Gathering, which rely heavily on dice rolls for game functions.
 
+![Screenshot](https://github.com/barisharslan/DiceRoll/blob/master/Screenshots/Screenshot_1.png)
+
+An example of one roll, then another roll, then ending the program.
